@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Haza Aheli & The Hazayana Collective - Electronic Press Kit. Tribal Fusion, Sacred Bass, Ethno-Contemporary dance performances.">
+  <title>Haza Aheli & The Hazayana Collective - EPK | Echological.fm</title>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://echological.fm/hazaaheli/epk/">
+  <meta property="og:title" content="Haza Aheli & The Hazayana Collective - EPK">
+  <meta property="og:description" content="Tribal Fusion | Sacred Bass | Ethno-Contemporary | World Fusion. International choreographer and Fusion Bellydance specialist.">
+  <meta property="og:image" content="https://echological.fm/hazaaheli/epk/hero.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/favicon.82cca1b7.ico">
+  <style>
+    :root {
+      --color-deep-blue: #1a2f4a;
+      --color-blue-mid: #2d4a6a;
+      --color-teal: #3a7d7c;
+      --color-green: #4a9d7e;
+      --color-gold: #d4af37;
+      --color-organic-green: #637e6d;
+      --color-gold-light: #f0d98e;
+      --color-white: #fff;
+      --color-off-white: #f8f9fa;
+      --color-gray-light: #e0e4e8;
+      --color-gray: #6c757d;
+      --color-dark: #212529;
+      --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --transition: .3s ease;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--font-base);
+      color: var(--color-dark);
+      background: var(--color-deep-blue);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 0 2rem;
+      margin: 0 auto;
+    }
+
+    /* Nav */
+    .nav {
+      padding: 0.5rem 0;
+      background: rgba(26, 47, 74, 0.7);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-container {
+      max-width: 900px;
+      padding: 0 2rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--color-white);
+    }
+
+    .nav-logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    .nav-logo span {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--color-white);
+      text-decoration: none;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      transition: opacity var(--transition), color var(--transition);
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+      color: var(--color-gold-light);
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 8rem 2rem 4rem;
+      background: linear-gradient(135deg, rgba(26, 47, 74, 0.85) 0%, rgba(45, 74, 106, 0.75) 100%),
+                  url('hero.png') center/cover no-repeat;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .hero-brand {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem;
+      color: var(--color-gold);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3.5rem;
+      color: var(--color-white);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--color-gold-light);
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    .hero-meta a {
+      color: var(--color-white);
+      text-decoration: none;
+      padding: 0.5rem 1.5rem;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 50px;
+      font-size: 0.9rem;
+      transition: all var(--transition);
+    }
+
+    .hero-meta a:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--color-gold-light);
+      color: var(--color-gold-light);
+    }
+
+    .genre-tags {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+
+    .genre-tag {
+      font-size: 0.8rem;
+      color: var(--color-teal);
+      background: rgba(58, 125, 124, 0.15);
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      border: 1px solid rgba(58, 125, 124, 0.3);
+    }
+
+    /* Sections */
+    .section {
+      padding: 4rem 0;
+    }
+
+    .section--white {
+      background: var(--color-white);
+    }
+
+    .section--light {
+      background: var(--color-off-white);
+    }
+
+    .section--gradient {
+      background: linear-gradient(135deg, var(--color-teal) 0%, var(--color-green) 100%);
+      color: var(--color-white);
+    }
+
+    .section--dark {
+      background: var(--color-deep-blue);
+      color: var(--color-white);
+    }
+
+    .section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      color: var(--color-deep-blue);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      position: relative;
+      padding-bottom: 0.75rem;
+    }
+
+    .section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-teal), var(--color-gold));
+      margin: 0.75rem auto 0;
+      border-radius: 2px;
+    }
+
+    .section--gradient h2,
+    .section--dark h2 {
+      color: var(--color-white);
+    }
+
+    .section--gradient h2::after,
+    .section--dark h2::after {
+      background: linear-gradient(90deg, var(--color-gold-light), var(--color-gold));
+    }
+
+    .section:first-of-type::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-teal) 0%, var(--color-green) 50%, var(--color-gold) 100%);
+    }
+
+    .section:first-of-type {
+      position: relative;
+    }
+
+    /* Vision quote */
+    .vision-quote {
+      font-size: 1.4rem;
+      font-style: italic;
+      color: var(--color-blue-mid);
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+      position: relative;
+      padding: 0 2rem;
+    }
+
+    .vision-quote::before {
+      content: '\201C';
+      font-size: 4rem;
+      color: var(--color-gold);
+      position: absolute;
+      top: -1.5rem;
+      left: 0;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .vision-text {
+      font-size: 1.1rem;
+      color: var(--color-blue-mid);
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* Bios */
+    .bio-block {
+      margin-bottom: 2.5rem;
+    }
+
+    .bio-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .bio-block h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.3rem;
+      color: var(--color-deep-blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .bio-label {
+      font-size: 0.8rem;
+      color: var(--color-gray);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .bio-block p {
+      font-size: 1.05rem;
+      color: var(--color-blue-mid);
+      line-height: 1.8;
+    }
+
+    /* Offerings */
+    .offering-card {
+      background: var(--color-white);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-left: 4px solid var(--color-teal);
+    }
+
+    .offering-card:nth-child(2) {
+      border-left-color: var(--color-gold);
+    }
+
+    .offering-card:nth-child(3) {
+      border-left-color: var(--color-green);
+    }
+
+    .offering-card h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.3rem;
+      color: var(--color-deep-blue);
+      margin-bottom: 0.75rem;
+    }
+
+    .offering-card p {
+      color: var(--color-blue-mid);
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+    }
+
+    .offering-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .offering-card ul li {
+      padding: 0.35rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--color-blue-mid);
+      line-height: 1.6;
+    }
+
+    .offering-card ul li::before {
+      content: '\2726';
+      position: absolute;
+      left: 0;
+      color: var(--color-gold);
+    }
+
+    /* Booking */
+    .booking-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .booking-box {
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .booking-box h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      color: var(--color-gold-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .booking-box p {
+      color: rgba(255,255,255,0.85);
+      line-height: 1.7;
+      margin-bottom: 0.5rem;
+    }
+
+    .booking-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .booking-box ul li {
+      padding: 0.3rem 0;
+      padding-left: 1.25rem;
+      position: relative;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .booking-box ul li::before {
+      content: '\2726';
+      position: absolute;
+      left: 0;
+      color: var(--color-gold);
+    }
+
+    .price-range {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      color: var(--color-gold-light);
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .price-note {
+      text-align: center;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* Tech */
+    .tech-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .tech-card {
+      background: var(--color-white);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .tech-card h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem;
+      color: var(--color-deep-blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .tech-card p {
+      color: var(--color-blue-mid);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* Contact */
+    .contact-content {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-email {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      color: var(--color-deep-blue);
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: var(--color-gold);
+      border-radius: 50px;
+      margin-bottom: 2rem;
+      transition: all var(--transition);
+      font-weight: 600;
+    }
+
+    .contact-email:hover {
+      background: var(--color-gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .video-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .video-links h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      color: var(--color-deep-blue);
+      margin-bottom: 0.25rem;
+    }
+
+    .video-links a {
+      color: var(--color-teal);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color var(--transition);
+    }
+
+    .video-links a:hover {
+      color: var(--color-gold);
+    }
+
+    /* Festivals list */
+    .festivals {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .festival-tag {
+      padding: 0.4rem 1rem;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 50px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--color-deep-blue);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer a {
+      color: var(--color-gold-light);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: var(--color-gold);
+    }
+
+    .footer p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.25rem; }
+      .hero { padding: 6rem 1.5rem 3rem; min-height: 70vh; }
+      .hero-subtitle { font-size: 1.1rem; }
+      .container { padding: 0 1.5rem; }
+      .section { padding: 3rem 0; }
+      .section h2 { font-size: 1.6rem; }
+      .booking-grid { grid-template-columns: 1fr; }
+      .tech-grid { grid-template-columns: 1fr; }
+      .vision-quote { font-size: 1.15rem; }
+      .nav-links span { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.75rem; }
+      .container { padding: 0 1rem; }
+      .hero-meta { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <img src="/icon_2_no_bg_100x100.30bf1447.png" alt="Echological.fm">
+        <span>Echological FM</span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="https://instagram.com/echological.fm" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.012 3.584-.069 4.849c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.668.072 4.948c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24s3.668-.014 4.948-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0m0 5.838A6.162 6.162 0 1 0 12 18.162 6.162 6.162 0 0 0 12 5.838M12 16c-2.209 0-4-1.79-4-4s1.791-4 4-4a4 4 0 0 1 0 8m6.406-11.845A1.44 1.44 0 1 0 18.406 7.035 1.44 1.44 0 0 0 18.406 4.155"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-brand">Echological.fm presents</div>
+      <h1>Haza Aheli &amp; The Hazayana Collective</h1>
+      <div class="genre-tags">
+        <span class="genre-tag">Tribal Fusion</span>
+        <span class="genre-tag">Sacred Bass</span>
+        <span class="genre-tag">Ethno-Contemporary</span>
+        <span class="genre-tag">World Fusion</span>
+      </div>
+      <p class="hero-subtitle">Electronic Press Kit</p>
+      <div class="hero-meta">
+        <a href="https://linktr.ee/haza_aheli" target="_blank" rel="noopener noreferrer">Linktree</a>
+        <a href="http://www.instagram.com/haza_dance" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- The Vision -->
+  <section class="section section--white">
+    <div class="container">
+      <h2>The Vision</h2>
+      <blockquote class="vision-quote">
+        A sacred intersection of ethnic tradition, futuristic bass, and theatrical storytelling.
+      </blockquote>
+      <p class="vision-text">
+        Haza Aheli is an international choreographer and Fusion Bellydance specialist with over 15 years of experience. A veteran of the global festival circuit (<strong>Boom Festival, Burning Man, Envision</strong>), she directs a collective that blends technical precision with deep, mystic emotion. Whether through high-energy stage shows or transformative workshops, Haza delivers an experience that is visually stunning and spiritually grounding.
+      </p>
+    </div>
+  </section>
+
+  <!-- Biographies -->
+  <section class="section section--light">
+    <div class="container">
+      <h2>Biographies</h2>
+
+      <div class="bio-block">
+        <h3>Haza Aheli</h3>
+        <span class="bio-label">Short Bio</span>
+        <p>
+          <strong>Haza Aheli</strong> is a visionary French dancer and choreographer known for blending ethnic traditions with contemporary movement. As the founder of <strong>Ahelia Retreats</strong> and artistic director of the <strong>Hazayana Collective</strong>, her work is a "sacred movement" that transcends performance. From the dust of Burning Man to the stages of Boom Festival, she invites audiences into a mystic world of embodied emotion, intricate musicality, and inventive force.
+        </p>
+      </div>
+
+      <div class="bio-block">
+        <h3>Full Artist Biography</h3>
+        <p>
+          <strong>Haza Aheli</strong> explores the powerful intersection of ethnic heritage and contemporary expression. A master of <strong>Tribal Fusion</strong> and <strong>Sacred Dance</strong>, Haza walks a unique path between tradition and innovation, creating choreographies that are as technically precise as they are spiritually resonant.
+        </p>
+        <p style="margin-top: 1rem;">
+          Her artistic philosophy focuses on "embodiment over appearance," using dance as a therapeutic and mystic tool to purify emotion and manifest beauty. This approach has taken her around the world, teaching and performing in Japan, Bali, Europe, and Costa Rica.
+        </p>
+        <p style="margin-top: 1rem;">
+          Haza is the founder of <strong>Ahelia Retreats</strong>, an immersive artistic wellness project, and the director of the <strong>Hazayana Crew</strong>. Her impressive performance resume includes major international stages such as <strong>Burning Man (USA)</strong>, <strong>Envision Festival (Costa Rica)</strong>, <strong>Tribal Bliss</strong>, and <strong>Sparkles Festival (Geneva)</strong>.
+        </p>
+      </div>
+
+      <div class="bio-block">
+        <h3>The Hazayana Collective</h3>
+        <span class="bio-label">Group Bio</span>
+        <p>
+          Under the artistic direction of Haza Aheli, <strong>The Hazayana Collective</strong> represents the cutting edge of Fusion Bellydance. This troupe embodies the "Fusion Illusion" style&mdash;a seamless integration of Tribal Bellydance, Yoga, and contemporary urban arts.
+        </p>
+        <p style="margin-top: 1rem;">
+          The collective offers an immersive visual and emotional experience, known for intricate musicality&mdash;often collaborating with electronic artists like <strong>CloZee</strong>, <strong>Moonkin</strong>, and <strong>Tipper</strong>&mdash;and the ability to transform a festival stage into a temple of sacred movement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Performance Offerings -->
+  <section class="section section--white">
+    <div class="container">
+      <h2>Performance Offerings</h2>
+      <p style="text-align:center; color: var(--color-blue-mid); margin-bottom: 2rem;">Flexible booking packages from single performances to full-weekend residencies.</p>
+
+      <div class="offering-card">
+        <h3>1. The Stage Experience (15 &ndash; 50 Minutes)</h3>
+        <p>A modular, high-production show designed for main stages or intimate theaters.</p>
+        <ul>
+          <li><strong>The Vibe:</strong> A theatrical journey blending Fusion Bellydance, storytelling, and "Sacred Bass" music.</li>
+          <li><strong>Visuals:</strong> Elaborate custom costuming and programmed LED light integration for high-impact nighttime slots.</li>
+          <li><strong>Live Elements:</strong> The show transcends backing tracks by incorporating live musicians, including didgeridoo and percussion, adding an organic, primal layer to the electronic beats.</li>
+          <li><strong>Fire Option:</strong> For outdoor nighttime slots, the troupe collaborates with elite fire partners to integrate pyrotechnic arts into the choreography.</li>
+        </ul>
+      </div>
+
+      <div class="offering-card">
+        <h3>2. The "Embodied Fusion" Workshop (60&ndash;90 Minutes)</h3>
+        <p><em>Proven success: 50+ attendees at Boom Festival.</em></p>
+        <p>An accessible yet deep workshop suitable for all skill levels. Haza leads participants through yoga-infused warm-ups, isolation techniques, and fusion choreography. It is more than a dance class; it is a community connection experience perfect for festival mornings or afternoon activation slots.</p>
+      </div>
+
+      <div class="offering-card">
+        <h3>3. Ecstatic Dance Hybrid Set</h3>
+        <p>A full journey for the dancefloor. This is not just a DJ set, but a live performance hybrid.</p>
+        <ul>
+          <li><strong>Format:</strong> DJ set accompanied by live vocals, didgeridoo, and live instrumentation.</li>
+          <li><strong>Atmosphere:</strong> Guiding the crowd from meditative lows to high-energy peaks, creating a safe container for free expression and movement.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking & Logistics -->
+  <section class="section section--gradient">
+    <div class="container">
+      <h2>Booking &amp; Logistics</h2>
+
+      <div class="price-range">&euro;2,000 &ndash; &euro;5,000</div>
+      <p class="price-note">Final quote depends on travel logistics, number of performers, and combination of workshops and shows.</p>
+
+      <div class="booking-grid">
+        <div class="booking-box">
+          <h3>Why Book Haza?</h3>
+          <ul>
+            <li><strong>Festival Ready:</strong> Experienced in handling large crowds and professional production environments.</li>
+            <li><strong>Versatile:</strong> One booking provides daytime content (Workshops), evening entertainment (Stage Show), and late-night vibes (Ecstatic Dance).</li>
+            <li><strong>High Production Value:</strong> Distinct visual identity, professional costuming, and musical direction that elevates your lineup.</li>
+          </ul>
+        </div>
+
+        <div class="booking-box">
+          <h3>Notable Past Performances</h3>
+          <div class="festivals">
+            <span class="festival-tag">Boom Festival</span>
+            <span class="festival-tag">Burning Man</span>
+            <span class="festival-tag">Envision Festival</span>
+            <span class="festival-tag">Tribal Bliss</span>
+            <span class="festival-tag">Sparkles Festival</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Requirements -->
+  <section class="section section--light">
+    <div class="container">
+      <h2>Technical Requirements</h2>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <h3>Lighting Design</h3>
+          <p>Lighting is a crucial element of our storytelling. We prefer to collaborate directly with the venue's lighting technician/designer to program cues that properly frame the dancers and highlight the performance. We provide mood boards or cue sheets in advance.</p>
+        </div>
+        <div class="tech-card">
+          <h3>Audio System</h3>
+          <p>Given the deep bass and intricate production of our music (Tipper, CloZee), a professional-grade sound system (PA) with high-fidelity sub-bass response is required. Monitors are also required for the dancers on stage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--white">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-content">
+        <p style="color: var(--color-gray); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; margin-bottom: 1rem;">Management / Booking</p>
+        <a href="mailto:booking@echological.fm" class="contact-email">booking@echological.fm</a>
+
+        <div class="video-links">
+          <h3>Video Samples</h3>
+          <a href="https://youtu.be/DMPsMxOXqYA" target="_blank" rel="noopener noreferrer">Haza Dance Crew "Wild" &rarr;</a>
+          <a href="https://youtu.be/6XAGd8xcnk0" target="_blank" rel="noopener noreferrer">Workshop @ Boom Festival &rarr;</a>
+          <a href="https://www.instagram.com/reel/DOHUkQjgtAl/" target="_blank" rel="noopener noreferrer">Ecstatic Dance @ Matricia Festival &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="/">echological.fm</a>
+    <p>Base: France | International Availability</p>
+  </footer>
+
+</body>
+</html>
