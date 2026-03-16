@@ -1,68 +1,50 @@
-# Haza Aheli - EPK Website
+# Haza Aheli
 
-Official Electronic Press Kit for Haza Aheli & The Hazayana Collective
+Official web presence for Haza Aheli & The Hazayana Collective, hosted under Echological.fm.
 
-A single-page EPK showcasing fusion dance performances, sacred bass music, and immersive workshop offerings for festival bookings worldwide.
+## Live Routes
 
-## Live Site
-
-`echological.fm/hazaaheli/epk/`
-
-Hosted as a sub-path of Echological.fm, served by Caddy via Docker on the VPS.
-
-## About
-
-This single-page website serves as a professional press kit for **Haza Aheli**, an international performer blending:
-- Tribal Fusion dance
-- Sacred Bass music
-- Fire performance art
-- Immersive workshops
-- Live percussion & didgeridoo
-
-Featured at major festivals including Boom Festival, Burning Man, and Envision.
+| URL | Description |
+|-----|-------------|
+| `echological.fm/hazaaheli/` | Full interactive website with Gemini AI features |
+| `echological.fm/hazaaheli/epk/` | Condensed Electronic Press Kit |
 
 ## Structure
 
 ```
-.
-├── index.html      # Main EPK page (single-page, no build step)
+hazaaheli/
+├── index.html      # Interactive site (Gemini AI Vision Alchemist, charts, tabs)
+├── hero.png        # Background image for main site
+├── epk/
+│   ├── index.html  # Condensed press kit (bio, offerings, booking, contact)
+│   └── hero.png    # Background image for EPK
+├── deploy.sh       # Deployment script
 └── README.md
 ```
 
-No build process — pure HTML/CSS/JS with CDN dependencies.
+No build process — pure HTML/CSS/JS with CDN dependencies (Tailwind, Chart.js, Google Fonts, Gemini API).
 
 ## Deployment
 
-The EPK is hosted as a sub-directory of the Echological.fm site:
+Hosted as a sub-path of Echological.fm, served by Caddy via Docker on the VPS.
 
-- **Deployed path on server:** `~/services/echological-fm/site/hazaaheli/epk/`
-- **Caddy config:** served automatically by the `echological.fm` file_server block
+- **Site files:** `~/services/echological-fm/site/hazaaheli/`
+- **Caddy config:** `~/services/caddy/Caddyfile` (served by the `echological.fm` file_server block)
 
-To deploy updates:
+To deploy:
 
 ```bash
-# Copy source files to the services directory
-cp index.html ~/services/echological-fm/site/hazaaheli/epk/
-cp hero.png ~/services/echological-fm/site/hazaaheli/epk/   # if changed
-
-# Reload Caddy (usually not needed for static file changes)
-docker exec caddy caddy reload --config /etc/caddy/Caddyfile
+./deploy.sh
 ```
 
-> **Note:** The deployed version at `~/services/echological-fm/site/hazaaheli/epk/index.html`
-> may differ from the source here — always sync changes back to this repo after editing.
-
-## Technologies Used
-
-- HTML5, CSS3, vanilla JavaScript
-- Google Fonts (Oswald)
-- No framework, no build step
+Copies both `index.html` + `hero.png` and `epk/` to `~/services/echological-fm/site/hazaaheli/`.
 
 ## Local Development
 
 ```bash
 python3 -m http.server 8000
-# open http://localhost:8000
+# Main site: http://localhost:8000
+# EPK:       http://localhost:8000/epk/
 ```
 
 ## Contact
