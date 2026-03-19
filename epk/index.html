@@ -594,6 +594,11 @@
       </a>
       <div class="nav-links">
         <a href="/">Home</a>
+        <span class="lang-switcher" style="display:flex;gap:0.5rem;align-items:center;">
+          <button onclick="setLang('en')" class="lang-btn" data-lang="en" style="background:none;border:none;color:#fff;cursor:pointer;font-size:0.85rem;opacity:0.8;">EN</button>
+          <span style="opacity:0.3;color:#fff;">/</span>
+          <button onclick="setLang('sv')" class="lang-btn" data-lang="sv" style="background:none;border:none;color:#fff;cursor:pointer;font-size:0.85rem;opacity:0.8;">SV</button>
+        </span>
         <a href="https://instagram.com/echological.fm" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.012 3.584-.069 4.849c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.668.072 4.948c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24s3.668-.014 4.948-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0m0 5.838A6.162 6.162 0 1 0 12 18.162 6.162 6.162 0 0 0 12 5.838M12 16c-2.209 0-4-1.79-4-4s1.791-4 4-4a4 4 0 0 1 0 8m6.406-11.845A1.44 1.44 0 1 0 18.406 7.035 1.44 1.44 0 0 0 18.406 4.155"/></svg>
         </a>
@@ -603,7 +608,7 @@
 
   <header class="hero">
     <div class="hero-content">
-      <div class="hero-brand">Echological.fm presents</div>
+      <div class="hero-brand" data-i18n="hero_presents">Echological.fm presents</div>
       <h1>Haza Aheli &amp; The Hazayana Collective</h1>
       <div class="genre-tags">
         <span class="genre-tag">Tribal Fusion</span>
@@ -611,7 +616,7 @@
         <span class="genre-tag">Ethno-Contemporary</span>
         <span class="genre-tag">World Fusion</span>
       </div>
-      <p class="hero-subtitle">Electronic Press Kit</p>
+      <p class="hero-subtitle" data-i18n="hero_epk">Electronic Press Kit</p>
       <div class="hero-meta">
         <a href="https://linktr.ee/haza_aheli" target="_blank" rel="noopener noreferrer">Linktree</a>
         <a href="http://www.instagram.com/haza_dance" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -622,11 +627,11 @@
   <!-- The Vision -->
   <section class="section section--white">
     <div class="container">
-      <h2>The Vision</h2>
-      <blockquote class="vision-quote">
+      <h2 data-i18n="vision_title">The Vision</h2>
+      <blockquote class="vision-quote" data-i18n="vision_quote">
         A sacred intersection of ethnic tradition, futuristic bass, and theatrical storytelling.
       </blockquote>
-      <p class="vision-text">
+      <p class="vision-text" data-i18n="vision_text">
         Haza Aheli is an international choreographer and Fusion Bellydance specialist with over 17 years of experience. A veteran of the global festival circuit (<strong>Boom Festival, Burning Man, Envision</strong>), she directs a collective that blends technical precision with deep, mystic emotion. Whether through high-energy stage shows or transformative workshops, Haza delivers an experience that is visually stunning and spiritually grounding.
       </p>
     </div>
@@ -635,18 +640,19 @@
   <!-- Biographies -->
   <section class="section section--light">
     <div class="container">
-      <h2>Biographies</h2>
+      <h2 data-i18n="bio_title">Biographies</h2>
 
       <div class="bio-block">
         <h3>Haza Aheli</h3>
-        <span class="bio-label">Short Bio</span>
-        <p>
+        <span class="bio-label" data-i18n="bio_short_label">Short Bio</span>
+        <p data-i18n="bio_short">
           <strong>Haza Aheli</strong> is a visionary French dancer and choreographer based in Toulouse, known for blending ethnic traditions with contemporary movement. A professional dancer since 2007 with over 17 years of teaching experience, she is the artistic director of the <strong>Hazayana Collective</strong>. Her work is a "sacred movement" that transcends performance. From the dust of Burning Man to the stages of Boom Festival, she invites audiences into a mystic world of embodied emotion, intricate musicality, and inventive force.
         </p>
       </div>
 
       <div class="bio-block">
-        <h3>Full Artist Biography</h3>
+        <h3 data-i18n="bio_full_title">Full Artist Biography</h3>
+        <div data-i18n="bio_full">
         <p>
           <strong>Haza Aheli</strong> explores the powerful intersection of ethnic heritage and contemporary expression. Originally trained in graphic arts and photography, she discovered oriental dance in 2007 and quickly gravitated toward <strong>Tribal Fusion</strong> and <strong>Sacred Dance</strong>, training with the American pioneers of the movement. She co-founded the duo <strong>Nadyka</strong>, performing together for seven years before forging her own artistic path. Haza weaves influences from <strong>hip hop, tutting, waving, and contemporary dance</strong> into her Tribal Fusion foundation, creating choreographies that are as technically precise as they are spiritually resonant.
         </p>
@@ -654,13 +660,15 @@
           Her artistic philosophy focuses on "embodiment over appearance," using dance as a therapeutic and mystic tool to purify emotion and manifest beauty. A dedicated community builder, she created the <strong>Ethnik Season Festival</strong> (seven editions) and the <strong>Fusion Flow Festival</strong> (since 2023). This approach has taken her around the world, teaching and performing in Japan, Bali, Europe, and Costa Rica.
         </p>
         <p style="margin-top: 1rem;">
-          Haza is the founder of <strong>Ahelia Retreats</strong>, an immersive artistic wellness project, and the director of the <strong>Hazayana Collective</strong>—known on the French stage circuit as <strong>SORA Dance Company</strong> (formerly Marabyliane, est. 2012). Her impressive performance resume includes major international stages such as <strong>Burning Man (USA)</strong>, <strong>Envision Festival (Costa Rica)</strong>, <strong>Boom Festival (Portugal)</strong>, <strong>Tribal Bliss</strong>, and <strong>Sparkles Festival (Geneva)</strong>.
+          Haza is the founder of <strong>Ahelia Retreats</strong>, an immersive artistic wellness project, and the director of the <strong>Hazayana Collective</strong>&mdash;known on the French stage circuit as <strong>SORA Dance Company</strong> (formerly Marabyliane, est. 2012). Her impressive performance resume includes major international stages such as <strong>Burning Man (USA)</strong>, <strong>Envision Festival (Costa Rica)</strong>, <strong>Boom Festival (Portugal)</strong>, <strong>Tribal Bliss</strong>, and <strong>Sparkles Festival (Geneva)</strong>.
         </p>
+        </div>
       </div>
 
       <div class="bio-block">
-        <h3>The Hazayana Collective</h3>
-        <span class="bio-label">Group Bio</span>
+        <h3 data-i18n="bio_group_title">The Hazayana Collective</h3>
+        <span class="bio-label" data-i18n="bio_group_label">Group Bio</span>
+        <div data-i18n="bio_group">
         <p>
           Under the artistic direction of Haza Aheli, <strong>The Hazayana Collective</strong>&mdash;performing locally in France as <strong>SORA Dance Company</strong>&mdash;represents the cutting edge of Fusion Bellydance. This multi-disciplinary troupe embodies the "Fusion Illusion" style, fusing the mystic and solemn world of Tribal Bellydance with the percussive energy of hip hop, tutting, waving, and contemporary urban arts.
         </p>
@@ -670,6 +678,7 @@
         <p style="margin-top: 1rem;">
           The collective offers an immersive visual and emotional experience, known for intricate musicality&mdash;often collaborating with electronic artists like <strong>CloZee</strong>, <strong>Moonkin</strong>, and <strong>Tipper</strong>&mdash;and the ability to transform a festival stage into a temple of sacred movement. Beyond stage shows, the company offers <strong>roaming performances</strong>, <strong>parade choreography</strong>, <strong>artist residencies</strong>, and <strong>video/clip collaborations</strong>.
         </p>
+        </div>
       </div>
     </div>
   </section>
@@ -677,13 +686,13 @@
   <!-- Performance Offerings -->
   <section class="section section--white">
     <div class="container">
-      <h2>Performance Offerings</h2>
-      <p style="text-align:center; color: var(--color-blue-mid); margin-bottom: 2rem;">Flexible booking packages from single performances to full-weekend residencies.</p>
+      <h2 data-i18n="offerings_title">Performance Offerings</h2>
+      <p style="text-align:center; color: var(--color-blue-mid); margin-bottom: 2rem;" data-i18n="offerings_subtitle">Flexible booking packages from single performances to full-weekend residencies.</p>
 
       <div class="offering-card">
-        <h3>1. The Stage Experience (15 &ndash; 50 Minutes)</h3>
-        <p>A modular, high-production show designed for main stages or intimate theaters.</p>
-        <ul>
+        <h3 data-i18n="off_stage_title">1. The Stage Experience (15 &ndash; 50 Minutes)</h3>
+        <p data-i18n="off_stage_desc">A modular, high-production show designed for main stages or intimate theaters.</p>
+        <ul data-i18n="off_stage_list">
           <li><strong>The Vibe:</strong> A theatrical journey blending Fusion Bellydance, storytelling, and "Sacred Bass" music.</li>
           <li><strong>Visuals:</strong> Elaborate custom costuming and programmed LED light integration for high-impact nighttime slots.</li>
           <li><strong>Live Elements:</strong> The show transcends backing tracks by incorporating live musicians, including didgeridoo and percussion, adding an organic, primal layer to the electronic beats.</li>
@@ -692,15 +701,17 @@
       </div>
 
       <div class="offering-card">
-        <h3>2. The "Embodied Fusion" Workshop (60&ndash;90 Minutes)</h3>
+        <h3 data-i18n="off_workshop_title">2. The "Embodied Fusion" Workshop (60&ndash;90 Minutes)</h3>
+        <div data-i18n="off_workshop_desc">
         <p><em>Proven success: 50+ attendees at Boom Festival.</em></p>
         <p>An accessible yet deep workshop suitable for all skill levels. Haza leads participants through yoga-infused warm-ups, isolation techniques, and fusion choreography. It is more than a dance class; it is a community connection experience perfect for festival mornings or afternoon activation slots.</p>
+        </div>
       </div>
 
       <div class="offering-card">
         <h3>3. Ecstatic Dance Hybrid Set</h3>
-        <p>A full journey for the dancefloor. This is not just a DJ set, but a live performance hybrid.</p>
-        <ul>
+        <p data-i18n="off_ecstatic_desc">A full journey for the dancefloor. This is not just a DJ set, but a live performance hybrid.</p>
+        <ul data-i18n="off_ecstatic_list">
           <li><strong>Format:</strong> DJ set accompanied by live vocals, didgeridoo, and live instrumentation.</li>
           <li><strong>Atmosphere:</strong> Guiding the crowd from meditative lows to high-energy peaks, creating a safe container for free expression and movement.</li>
         </ul>
@@ -711,15 +722,15 @@
   <!-- Booking & Logistics -->
   <section class="section section--gradient">
     <div class="container">
-      <h2>Booking &amp; Logistics</h2>
+      <h2 data-i18n="booking_title">Booking &amp; Logistics</h2>
 
       <div class="price-range">&euro;2,000 &ndash; &euro;5,000</div>
-      <p class="price-note">Final quote depends on travel logistics, number of performers, and combination of workshops and shows.</p>
+      <p class="price-note" data-i18n="booking_note">Final quote depends on travel logistics, number of performers, and combination of workshops and shows.</p>
 
       <div class="booking-grid">
         <div class="booking-box">
-          <h3>Why Book Haza?</h3>
-          <ul>
+          <h3 data-i18n="booking_why_title">Why Book Haza?</h3>
+          <ul data-i18n="booking_why_list">
             <li><strong>Festival Ready:</strong> Experienced in handling large crowds and professional production environments.</li>
             <li><strong>Versatile:</strong> One booking provides daytime content (Workshops), evening entertainment (Stage Show), and late-night vibes (Ecstatic Dance).</li>
             <li><strong>High Production Value:</strong> Distinct visual identity, professional costuming, and musical direction that elevates your lineup.</li>
@@ -727,7 +738,7 @@
         </div>
 
         <div class="booking-box">
-          <h3>Notable Past Performances</h3>
+          <h3 data-i18n="booking_past_title">Notable Past Performances</h3>
           <div class="festivals">
             <span class="festival-tag">Boom Festival '22 '25</span>
             <span class="festival-tag">Burning Man</span>
@@ -737,7 +748,7 @@
             <span class="festival-tag">Halle de la Machine '22</span>
             <span class="festival-tag">Tribal Bliss '14</span>
             <span class="festival-tag">Tribal X Lisbon '16</span>
-            <span class="festival-tag">Tribal Experience '14–'16</span>
+            <span class="festival-tag">Tribal Experience '14&ndash;'16</span>
             <span class="festival-tag">Sparkles Festival</span>
           </div>
         </div>
@@ -748,23 +759,23 @@
   <!-- Technical Requirements -->
   <section class="section section--light">
     <div class="container">
-      <h2>Technical Requirements</h2>
+      <h2 data-i18n="tech_title">Technical Requirements</h2>
       <div class="tech-grid">
         <div class="tech-card">
-          <h3>Lighting Design</h3>
-          <p>Lighting is a crucial element of our storytelling. We prefer to collaborate directly with the venue's lighting technician/designer to program cues that properly frame the dancers and highlight the performance. We provide mood boards or cue sheets in advance.</p>
+          <h3 data-i18n="tech_light_title">Lighting Design</h3>
+          <p data-i18n="tech_light_desc">Lighting is a crucial element of our storytelling. We prefer to collaborate directly with the venue's lighting technician/designer to program cues that properly frame the dancers and highlight the performance. We provide mood boards or cue sheets in advance.</p>
         </div>
         <div class="tech-card">
-          <h3>Audio System</h3>
-          <p>Professional-grade PA with high-fidelity sub-bass response required. Monitors required for dancers on stage. We provide our audio mix in MP3 and WAV formats in advance and bring it on USB on the day.</p>
+          <h3 data-i18n="tech_audio_title">Audio System</h3>
+          <p data-i18n="tech_audio_desc">Professional-grade PA with high-fidelity sub-bass response required. Monitors required for dancers on stage. We provide our audio mix in MP3 and WAV formats in advance and bring it on USB on the day.</p>
         </div>
         <div class="tech-card">
-          <h3>Stage Space</h3>
-          <p>Clear, flat performance area with a minimum of 7m width x 7m depth. If the space is smaller, please communicate this in advance so we can adapt.</p>
+          <h3 data-i18n="tech_stage_title">Stage Space</h3>
+          <p data-i18n="tech_stage_desc">Clear, flat performance area with a minimum of 7m width x 7m depth. If the space is smaller, please communicate this in advance so we can adapt.</p>
         </div>
         <div class="tech-card">
-          <h3>Rehearsal &amp; Backstage</h3>
-          <p>A sound and lighting rehearsal on stage is required in the hours before the performance. A dedicated dressing room (loges) is needed to prepare and securely store costumes and accessories.</p>
+          <h3 data-i18n="tech_backstage_title">Rehearsal &amp; Backstage</h3>
+          <p data-i18n="tech_backstage_desc">A sound and lighting rehearsal on stage is required in the hours before the performance. A dedicated dressing room (loges) is needed to prepare and securely store costumes and accessories.</p>
         </div>
       </div>
     </div>
@@ -773,13 +784,13 @@
   <!-- Contact -->
   <section class="section section--white">
     <div class="container">
-      <h2>Contact</h2>
+      <h2 data-i18n="contact_title">Contact</h2>
       <div class="contact-content">
-        <p style="color: var(--color-gray); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; margin-bottom: 1rem;">Management / Booking</p>
-        <a href="mailto:booking@echological.fm" class="contact-email">booking@echological.fm</a>
+        <p style="color: var(--color-gray); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; margin-bottom: 1rem;" data-i18n="contact_label">Management / Booking</p>
+        <a href="mailto:bookings@echological.fm" class="contact-email">bookings@echological.fm</a>
 
         <div class="video-links">
-          <h3>Video Samples</h3>
+          <h3 data-i18n="video_title">Video Samples</h3>
           <a href="https://youtu.be/DMPsMxOXqYA" target="_blank" rel="noopener noreferrer">Haza Dance Crew "Wild" &rarr;</a>
           <a href="https://youtu.be/6XAGd8xcnk0" target="_blank" rel="noopener noreferrer">Workshop @ Boom Festival &rarr;</a>
           <a href="https://www.instagram.com/reel/DOHUkQjgtAl/" target="_blank" rel="noopener noreferrer">Ecstatic Dance @ Matricia Festival &rarr;</a>
@@ -795,8 +806,72 @@
 
   <footer class="footer">
     <a href="/">echological.fm</a>
-    <p>Base: Toulouse, France | International Availability</p>
+    <p data-i18n="footer_text">Base: Toulouse, France | International Availability</p>
   </footer>
+
+  <script>
+    const sv = {
+      hero_presents: "Echological.fm presenterar",
+      hero_epk: "Elektroniskt presskit",
+      vision_title: "Visionen",
+      vision_quote: "En sakral korsning av etnisk tradition, futuristisk bas och teatral berättarkonst.",
+      vision_text: `Haza Aheli är en internationell koreograf och Fusion Bellydance-specialist med över 17 års erfarenhet. En veteran på den globala festivalscenen (<strong>Boom Festival, Burning Man, Envision</strong>) leder hon ett kollektiv som förenar teknisk precision med djup, mystisk känsla. Oavsett om det handlar om energiladdade scenshower eller transformativa workshops levererar Haza en upplevelse som är visuellt slående och andligt grundande.`,
+      bio_title: "Biografier",
+      bio_short_label: "Kortbiografi",
+      bio_short: `<strong>Haza Aheli</strong> är en visionär fransk dansare och koreograf baserad i Toulouse, känd för att sammanfläta etniska traditioner med samtida rörelse. Professionell dansare sedan 2007 med över 17 års undervisningserfarenhet, hon är konstnärlig ledare för <strong>Hazayana-kollektivet</strong>. Hennes konst är en "sakral rörelse" som transcenderar föreställningen. Från Burning Mans damm till Boom Festivals scener bjuder hon in publiken till en mystisk värld av förkroppsligad känsla, intrikat musikalitet och uppfinningsrik kraft.`,
+      bio_full_title: "Fullständig biografi",
+      bio_full: `<p><strong>Haza Aheli</strong> utforskar den kraftfulla skärningspunkten mellan etniskt arv och samtida uttryck. Ursprungligen utbildad inom grafisk konst och fotografi upptäckte hon orientalisk dans 2007 och drogs snabbt mot den djärvare världen av <strong>Tribal Fusion</strong> och <strong>Sacred Dance</strong>, där hon utbildade sig hos rörelsens amerikanska pionjärer. Hon grundade duon <strong>Nadyka</strong> och uppträdde tillsammans i sju år innan hon formade sin egen konstnärliga väg. Haza väver influenser från <strong>hiphop, tutting, waving och samtida dans</strong> in i sin Tribal Fusion-grund och skapar koreografier som är lika tekniskt precisa som andligt resonanta.</p><p style="margin-top:1rem;">Hennes konstnärliga filosofi fokuserar på "förkroppsligande framför utseende" och använder dansen som ett terapeutiskt och mystiskt verktyg för att rena känslor och manifestera skönhet. Som en hängiven gemenskapsbyggare skapade hon <strong>Ethnik Season Festival</strong> (sju editioner) och <strong>Fusion Flow Festival</strong> (sedan 2023). Denna approach har tagit henne världen runt — undervisning och uppträdanden i Japan, Bali, Europa och Costa Rica.</p><p style="margin-top:1rem;">Haza är grundare av <strong>Ahelia Retreats</strong>, ett immersivt konstnärligt wellnessprojekt, och ledare för <strong>Hazayana-kollektivet</strong> — känt på den franska scenkretsen som <strong>SORA Dance Company</strong> (tidigare Marabyliane, grundat 2012). Hennes imponerande meritlista inkluderar stora internationella scener som <strong>Burning Man (USA)</strong>, <strong>Envision Festival (Costa Rica)</strong>, <strong>Boom Festival (Portugal)</strong>, <strong>Tribal Bliss</strong> och <strong>Sparkles Festival (Genève)</strong>.</p>`,
+      bio_group_title: "Hazayana-kollektivet",
+      bio_group_label: "Kollektivbiografi",
+      bio_group: `<p>Under Haza Ahelis konstnärliga ledning representerar <strong>Hazayana-kollektivet</strong> — som uppträder lokalt i Frankrike som <strong>SORA Dance Company</strong> — den yttersta spetsen av Fusion Bellydance. Denna tvärvetenskapliga trupp förkroppsligar stilen "Fusion Illusion" och sammansmälter Tribal Bellydances mystiska och högtidliga värld med den perkussiva energin från hiphop, tutting, waving och samtida urban konst.</p><p style="margin-top:1rem;">Kompaniet består av <strong>Haza</strong> (konstnärlig ledare & koreograf), <strong>Marie Castellano</strong> och <strong>Sarah Debaud</strong> (dansare & koreografer) samt musiker <strong>Stew Bamrah</strong> (live-didgeridoo & ljudterapi). Deras repertoar inkluderar signaturproduktioner som <strong>RITUEL</strong> (en mystisk, drömlik 1-timmesshow), <strong>ABYSSE</strong> (ett luminöst spektakel) och <strong>ENVOL</strong> (med aerial silks, slöjor och flaggvingar).</p><p style="margin-top:1rem;">Kollektivet erbjuder en immersiv visuell och emotionell upplevelse, känt för sin intrikata musikalitet — ofta i samarbete med elektroniska artister som <strong>CloZee</strong>, <strong>Moonkin</strong> och <strong>Tipper</strong> — och förmågan att förvandla en festivalscen till ett tempel för sakral rörelse. Utöver scenshow erbjuder kompaniet <strong>vandrande föreställningar</strong>, <strong>paradkoreografi</strong>, <strong>konstnärsresidens</strong> och <strong>video/klipp-samarbeten</strong>.</p>`,
+      offerings_title: "Föreställningar",
+      offerings_subtitle: "Flexibla bokningspaket från enskilda framträdanden till helgresidenser.",
+      off_stage_title: "1. Scenupplevelsen (15 &ndash; 50 minuter)",
+      off_stage_desc: "En modulär show med hög produktion, designad för huvudscener eller intima teatrar.",
+      off_stage_list: `<li><strong>Känslan:</strong> En teatral resa som förenar Fusion Bellydance, berättarkonst och "Sacred Bass"-musik.</li><li><strong>Visuellt:</strong> Skräddarsydda kostymer och programmerad LED-ljusintegration för kvällsslots med hög visuell effekt.</li><li><strong>Liveelement:</strong> Showen transcenderar inspelade spår genom att inkorporera livemusiker, inklusive didgeridoo och slagverk, vilket tillför ett organiskt, primalt lager till de elektroniska beatsarna.</li><li><strong>Eldshow-alternativ:</strong> För utomhuskvällsslots samarbetar truppen med elitpartners inom eldkonst för att integrera pyroteknisk konst i koreografin.</li>`,
+      off_workshop_title: "2. Embodied Fusion workshop (60&ndash;90 minuter)",
+      off_workshop_desc: `<p><em>Bevisad framgång: 50+ deltagare på Boom Festival.</em></p><p>En tillgänglig men djupgående workshop som passar alla nivåer. Haza leder deltagarna genom yogainspirerade uppvärmningar, isolationstekniker och fusionskoreografi. Det är mer än en danskurs; det är en gemenskapsupplevelse perfekt för festivalmorgnar eller eftermiddagsaktivering.</p>`,
+      off_ecstatic_desc: "En fullständig resa för dansgolvet. Det här är inte bara ett DJ-set, utan en liveföreställning i hybridformat.",
+      off_ecstatic_list: `<li><strong>Format:</strong> DJ-set ackompanjerat av livesång, didgeridoo och liveinstrument.</li><li><strong>Atmosfär:</strong> Guida publiken från meditativa djup till högenergitoppar och skapa en trygg atmosfär för fritt uttryck och rörelse.</li>`,
+      booking_title: "Bokning & logistik",
+      booking_note: "Slutgiltigt pris beror på reselogistik, antal artister och kombination av workshops och shower.",
+      booking_why_title: "Varför boka Haza?",
+      booking_why_list: `<li><strong>Festivalredo:</strong> Erfarenhet av stora folkmassor och professionella produktionsmiljöer.</li><li><strong>Mångsidigt:</strong> En bokning ger dagsinnehåll (workshops), kvällsunderhållning (scenshow) och nattliga vibbar (Ecstatic Dance).</li><li><strong>Högt produktionsvärde:</strong> Distinkt visuell identitet, professionella kostymer och musikalisk riktning som lyfter ert program.</li>`,
+      booking_past_title: "Anmärkningsvärda framträdanden",
+      tech_title: "Tekniska krav",
+      tech_light_title: "Ljusdesign",
+      tech_light_desc: "Ljussättning är ett avgörande element i vårt berättande. Vi föredrar att samarbeta direkt med platsens ljustekniker/designer för att programmera cues som ramar in dansarna och lyfter föreställningen. Vi tillhandahåller mood boards eller cue sheets i förväg.",
+      tech_audio_title: "Ljudsystem",
+      tech_audio_desc: "Professionellt PA med högkvalitativ subbas-respons krävs. Monitorer krävs för dansarna på scen. Vi tillhandahåller vår ljudmix i MP3- och WAV-format i förväg och tar med den på USB på dagen.",
+      tech_stage_title: "Scenutrymme",
+      tech_stage_desc: "Fri, plan yta med minst 7m bredd x 7m djup. Om utrymmet är mindre, vänligen meddela detta i förväg så att vi kan anpassa oss.",
+      tech_backstage_title: "Repetition & backstage",
+      tech_backstage_desc: "En ljud- och ljusrepetition på scenen krävs timmarna före föreställningen. Ett dedikerat omklädningsrum (loge) behövs för att förbereda och säkert förvara kostymer och accessoarer.",
+      contact_title: "Kontakt",
+      contact_label: "Management / bokning",
+      video_title: "Videoexempel",
+      footer_text: "Bas: Toulouse, Frankrike | Internationell tillgänglighet"
+    };
+
+    const enStore = {};
+
+    function setLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (!enStore[key]) enStore[key] = el.innerHTML;
+        if (lang === 'sv' && sv[key]) {
+          el.innerHTML = sv[key];
+        } else if (lang === 'en' && enStore[key]) {
+          el.innerHTML = enStore[key];
+        }
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.style.opacity = btn.dataset.lang === lang ? '1' : '0.5';
+        btn.style.textDecoration = btn.dataset.lang === lang ? 'underline' : 'none';
+      });
+      document.documentElement.lang = lang;
+    }
+  </script>
 
 </body>
 </html>
