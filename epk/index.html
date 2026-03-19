@@ -690,9 +690,9 @@
       <div class="nav-links">
         <a href="/">Home</a>
         <span class="lang-switcher" style="display:flex;gap:0.5rem;align-items:center;">
-          <button onclick="setLang('en')" class="lang-btn" data-lang="en" style="background:none;border:none;color:#fff;cursor:pointer;font-size:0.85rem;opacity:0.8;">EN 🇬🇧</button>
+          <a href="/epk/en/" class="lang-btn" data-lang="en" style="color:#fff;text-decoration:none;font-size:0.85rem;opacity:0.8;">EN 🇬🇧</a>
           <span style="opacity:0.3;color:#fff;">/</span>
-          <button onclick="setLang('sv')" class="lang-btn" data-lang="sv" style="background:none;border:none;color:#fff;cursor:pointer;font-size:0.85rem;opacity:0.8;">SV 🇸🇪</button>
+          <a href="/epk/sv/" class="lang-btn" data-lang="sv" style="color:#fff;text-decoration:none;font-size:0.85rem;opacity:0.8;">SV 🇸🇪</a>
         </span>
         <button class="pdf-btn" onclick="window.print()" title="Save as PDF" data-i18n="pdf_btn">Save as PDF</button>
         <a href="https://instagram.com/echological.fm" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -968,6 +968,16 @@
       });
       document.documentElement.lang = lang;
     }
+
+    // Auto-detect language from URL path
+    (function() {
+      const path = window.location.pathname;
+      if (path.includes('/epk/sv')) {
+        setLang('sv');
+      } else {
+        setLang('en');
+      }
+    })();
   </script>
 
 </body>
