@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Haza Aheli & The Hazayana Collective - Electronic Press Kit. Tribal Fusion, Sacred Bass, Ethno-Contemporary dance performances.">
+  <meta name="description" id="meta-desc" content="Haza Aheli & The Hazayana Collective - Electronic Press Kit. Tribal Fusion, Sacred Bass, Ethno-Contemporary dance performances.">
   <title>Haza Aheli & The Hazayana Collective - EPK | Echological.fm</title>
+  <link rel="canonical" id="canonical-link" href="https://echological.fm/hazaaheli/epk/en/">
+  <link rel="alternate" hreflang="en" href="https://echological.fm/hazaaheli/epk/en/">
+  <link rel="alternate" hreflang="sv" href="https://echological.fm/hazaaheli/epk/sv/">
+  <link rel="alternate" hreflang="x-default" href="https://echological.fm/hazaaheli/epk/en/">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://echological.fm/hazaaheli/epk/">
-  <meta property="og:title" content="Haza Aheli & The Hazayana Collective - EPK">
-  <meta property="og:description" content="Tribal Fusion | Sacred Bass | Ethno-Contemporary | World Fusion. International choreographer and Fusion Bellydance specialist.">
+  <meta property="og:url" id="og-url" content="https://echological.fm/hazaaheli/epk/en/">
+  <meta property="og:title" id="og-title" content="Haza Aheli & The Hazayana Collective - EPK">
+  <meta property="og:description" id="og-desc" content="Tribal Fusion | Sacred Bass | Ethno-Contemporary | World Fusion. International choreographer and Fusion Bellydance specialist.">
   <meta property="og:image" content="https://echological.fm/hazaaheli/epk/hero.png">
+  <meta property="og:locale" id="og-locale" content="en_GB">
+  <meta property="og:locale:alternate" content="sv_SE">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
@@ -906,6 +912,25 @@
   </footer>
 
   <script>
+    const meta = {
+      en: {
+        title: 'Haza Aheli & The Hazayana Collective - EPK | Echological.fm',
+        description: 'Haza Aheli & The Hazayana Collective - Electronic Press Kit. Tribal Fusion, Sacred Bass, Ethno-Contemporary dance performances.',
+        og_title: 'Haza Aheli & The Hazayana Collective - EPK',
+        og_desc: 'Tribal Fusion | Sacred Bass | Ethno-Contemporary | World Fusion. International choreographer and Fusion Bellydance specialist.',
+        og_locale: 'en_GB',
+        url: 'https://echological.fm/hazaaheli/epk/en/'
+      },
+      sv: {
+        title: 'Haza Aheli & Hazayana-kollektivet - EPK | Echological.fm',
+        description: 'Haza Aheli & Hazayana-kollektivet - Elektroniskt presskit. Tribal Fusion, Sacred Bass, Ethno-Contemporary dansföreställningar.',
+        og_title: 'Haza Aheli & Hazayana-kollektivet - EPK',
+        og_desc: 'Tribal Fusion | Sacred Bass | Ethno-Contemporary | World Fusion. Internationell koreograf och Fusion Bellydance-specialist.',
+        og_locale: 'sv_SE',
+        url: 'https://echological.fm/hazaaheli/epk/sv/'
+      }
+    };
+
     const sv = {
       hero_presents: "Echological.fm presenterar",
       hero_epk: "Elektroniskt presskit",
@@ -967,6 +992,16 @@
         btn.style.textDecoration = btn.dataset.lang === lang ? 'underline' : 'none';
       });
       document.documentElement.lang = lang;
+
+      // Update meta tags for SEO
+      const m = meta[lang] || meta.en;
+      document.title = m.title;
+      document.getElementById('meta-desc').content = m.description;
+      document.getElementById('canonical-link').href = m.url;
+      document.getElementById('og-url').content = m.url;
+      document.getElementById('og-title').content = m.og_title;
+      document.getElementById('og-desc').content = m.og_desc;
+      document.getElementById('og-locale').content = m.og_locale;
     }
 
     // Auto-detect language from URL path
