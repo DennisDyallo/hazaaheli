@@ -11,12 +11,21 @@
     <meta name="author" content="Haza Aheli Management">
     
     <!-- Social Sharing (OpenGraph) -->
-    <meta property="og:title" content="Haza Aheli - Sacred Movement Art">
-    <meta property="og:description" content="Fusion Dance | Immersive Performance | Embodied Workshops. As seen at Boom, Burning Man, and Envision.">
+    <link rel="canonical" id="canonical-link" href="https://echological.fm/hazaaheli/en/">
+    <link rel="alternate" hreflang="en" href="https://echological.fm/hazaaheli/en/">
+    <link rel="alternate" hreflang="fr" href="https://echological.fm/hazaaheli/fr/">
+    <link rel="alternate" hreflang="sv" href="https://echological.fm/hazaaheli/sv/">
+    <link rel="alternate" hreflang="x-default" href="https://echological.fm/hazaaheli/en/">
+    <meta property="og:title" id="og-title" content="Haza Aheli - Sacred Movement Art">
+    <meta property="og:description" id="og-desc" content="Fusion Dance | Immersive Performance | Embodied Workshops. As seen at Boom, Burning Man, and Envision.">
     <meta property="og:type" content="website">
+    <meta property="og:url" id="og-url" content="https://echological.fm/hazaaheli/en/">
     <meta property="og:image" content="https://echological.fm/hazaaheli/hero.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:type" content="image/png">
+    <meta property="og:locale" id="og-locale" content="en_GB">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="sv_SE">
 
     <!-- Libraries -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -170,11 +179,11 @@
 
                 <!-- Language Switcher Desktop -->
                 <div class="lang-pill flex items-center ml-4 space-x-2 border border-white/30 rounded-full px-4 py-1.5">
-                    <button onclick="setLanguage('en')" class="hover:text-gold transition-colors font-medium text-white/90 lang-btn" data-lang="en">EN 🇬🇧</button>
+                    <a href="/hazaaheli/en/" class="hover:text-gold transition-colors font-medium text-white/90 lang-btn" data-lang="en">EN 🇬🇧</a>
                     <span class="text-white/30">/</span>
-                    <button onclick="setLanguage('fr')" class="hover:text-gold transition-colors font-medium text-white/90 lang-btn" data-lang="fr">FR 🇫🇷</button>
+                    <a href="/hazaaheli/fr/" class="hover:text-gold transition-colors font-medium text-white/90 lang-btn" data-lang="fr">FR 🇫🇷</a>
                     <span class="text-white/30">/</span>
-                    <button onclick="setLanguage('sv')" class="hover:text-gold transition-colors font-medium text-white/90 lang-btn" data-lang="sv">SV 🇸🇪</button>
+                    <a href="/hazaaheli/sv/" class="hover:text-gold transition-colors font-medium text-white/90 lang-btn" data-lang="sv">SV 🇸🇪</a>
                 </div>
             </div>
 
@@ -192,9 +201,9 @@
                 <a href="#media" class="block hover:text-gold" data-i18n="nav_media">Media</a>
                 <a href="#booking" class="block hover:text-gold" data-i18n="nav_booking">Booking</a>
                 <div class="flex space-x-4 pt-4 border-t border-stone">
-                    <button onclick="setLanguage('en')" class="hover:text-gold font-medium lang-btn" data-lang="en">EN 🇬🇧</button>
-                    <button onclick="setLanguage('fr')" class="hover:text-gold font-medium lang-btn" data-lang="fr">FR 🇫🇷</button>
-                    <button onclick="setLanguage('sv')" class="hover:text-gold font-medium lang-btn" data-lang="sv">SV 🇸🇪</button>
+                    <a href="/hazaaheli/en/" class="hover:text-gold font-medium lang-btn" data-lang="en">EN 🇬🇧</a>
+                    <a href="/hazaaheli/fr/" class="hover:text-gold font-medium lang-btn" data-lang="fr">FR 🇫🇷</a>
+                    <a href="/hazaaheli/sv/" class="hover:text-gold font-medium lang-btn" data-lang="sv">SV 🇸🇪</a>
                 </div>
             </div>
         </div>
@@ -694,6 +703,34 @@
         // --- API KEY & STORAGE LOGIC ---
         const fakeKey = "QUl6YVN5REdxYmZEcmduOFhZTFNpalBEQVFwMUxwMnJmZS1QZjhv"
 
+        // --- SEO META ---
+        const pageMeta = {
+            en: {
+                title: 'Haza Aheli & The Hazayana Collective | Fusion Dance & Sacred Bass',
+                description: 'Official EPK for Haza Aheli. International Tribal Fusion dance, immersive workshops, and sacred bass performance art. Booking for festivals worldwide.',
+                og_title: 'Haza Aheli - Sacred Movement Art',
+                og_desc: 'Fusion Dance | Immersive Performance | Embodied Workshops. As seen at Boom, Burning Man, and Envision.',
+                og_locale: 'en_GB',
+                url: 'https://echological.fm/hazaaheli/en/'
+            },
+            fr: {
+                title: 'Haza Aheli & Le Collectif Hazayana | Danse Fusion & Basse Sacrée',
+                description: 'Dossier de presse officiel de Haza Aheli. Danse Tribal Fusion internationale, ateliers immersifs et art de la performance sacrée. Réservation pour festivals.',
+                og_title: 'Haza Aheli - Art du Mouvement Sacré',
+                og_desc: 'Danse Fusion | Performance Immersive | Ateliers Incarnés. Vu à Boom, Burning Man et Envision.',
+                og_locale: 'fr_FR',
+                url: 'https://echological.fm/hazaaheli/fr/'
+            },
+            sv: {
+                title: 'Haza Aheli & Hazayana-kollektivet | Fusionsdans & Sacred Bass',
+                description: 'Officiellt presskit för Haza Aheli. Internationell Tribal Fusion-dans, immersiva workshops och sakral performancekonst. Bokning för festivaler världen över.',
+                og_title: 'Haza Aheli - Sakral rörelsekonst',
+                og_desc: 'Fusionsdans | Immersiv föreställning | Embodied workshops. Sedd på Boom, Burning Man och Envision.',
+                og_locale: 'sv_SE',
+                url: 'https://echological.fm/hazaaheli/sv/'
+            }
+        };
+
         // --- TRANSLATION ENGINE ---
         let currentLang = 'en';
 
@@ -911,6 +948,17 @@
             // Refresh Chart Labels
             vibeChart.data.labels = chartLabels[lang];
             vibeChart.update();
+
+            // Update SEO meta tags
+            const m = pageMeta[lang] || pageMeta.en;
+            document.title = m.title;
+            document.querySelector('meta[name="description"]').content = m.description;
+            document.getElementById('canonical-link').href = m.url;
+            document.getElementById('og-url').content = m.url;
+            document.getElementById('og-title').content = m.og_title;
+            document.getElementById('og-desc').content = m.og_desc;
+            document.getElementById('og-locale').content = m.og_locale;
+            document.documentElement.lang = lang;
         }
 
 
@@ -1204,7 +1252,13 @@
         // --- INIT ---
         window.addEventListener('DOMContentLoaded', () => {
             initChart();
-            setLanguage('en');
+
+            // Auto-detect language from URL path
+            const path = window.location.pathname;
+            let detectedLang = 'en';
+            if (path.includes('/hazaaheli/fr')) detectedLang = 'fr';
+            else if (path.includes('/hazaaheli/sv')) detectedLang = 'sv';
+            setLanguage(detectedLang);
 
             // Scroll Reveal (Intersection Observer)
             const revealElements = document.querySelectorAll('.reveal-on-scroll');
